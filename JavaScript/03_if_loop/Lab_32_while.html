@@ -45,13 +45,22 @@ $(document).ready(function () {
     $("#okButton").on('click', function () {
         var total = 0;
         var i = 1;
-        while (i <= 5) {
+        // while (i <= 5) {
+        //     total += i;
+        //     i++;
+        // }
+        var total2 = 0;
+        for(i;i<6;i++){
+            if(!(i%2==0)){
+                total2 +=i;
+            }
             total += i;
-            i++;
         }
-        report.innerHTML += `A, total = ${total} <br>`;
-        // 請用 for 迴圈的語法重寫一遍, 參考答案附於稍後
 
+        report.innerHTML += `A, total = ${total} <br>`;
+        report.innerHTML += `基數 = ${total2} <br>`;
+        // 請用 for 迴圈的語法重寫一遍, 參考答案附於稍後
+        
 
 
 
